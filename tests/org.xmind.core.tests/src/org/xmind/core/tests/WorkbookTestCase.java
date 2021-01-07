@@ -14,16 +14,16 @@ public class WorkbookTestCase {
 
     @Test
     public void testWorkbookCreation() throws Exception {
-        IWorkbook workbook = Core.getWorkbookBuilder().createWorkbook();
-        assertNotNull(workbook);
+        IWorkbook 工作簿 = Core.getWorkbookBuilder().createWorkbook();
+        assertNotNull(工作簿);
 
-        ISheet sheet = workbook.getPrimarySheet();
-        assertNotNull(sheet);
-        assertEquals("", sheet.getTitleText());
+        ISheet 表 = 工作簿.getPrimarySheet();
+        assertNotNull(表);
+        assertEquals("", 表.getTitleText());
 
-        ITopic rootTopic = sheet.getRootTopic();
-        assertNotNull(rootTopic);
-        assertEquals("", rootTopic.getTitleText());
+        ITopic 根主题 = 表.getRootTopic();
+        assertNotNull(根主题);
+        assertEquals("", 根主题.getTitleText());
     }
 
     @Test
