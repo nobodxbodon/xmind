@@ -12,18 +12,18 @@ import org.xmind.core.util.*;
 
 public class WorkbookTestCase {
 
-    @Test
-    public void testWorkbookCreation() throws Exception {
-        IWorkbook 工作簿 = Core.getWorkbookBuilder().createWorkbook();
-        assertNotNull(工作簿);
+    @测试
+    public void 创建工作簿() throws Exception {
+        I工作簿 工作簿 = 核心.取工作簿构建器().创建();
+        不为空(工作簿);
 
-        ISheet 表 = 工作簿.getPrimarySheet();
-        assertNotNull(表);
-        assertEquals("", 表.getTitleText());
+        I表 表 = 工作簿.取首个表();
+        不为空(表);
+        相等("", 表.取题目());
 
-        ITopic 根主题 = 表.getRootTopic();
-        assertNotNull(根主题);
-        assertEquals("", 根主题.getTitleText());
+        I主题 根主题 = 表.取根主题();
+        不为空(根主题);
+        相等("", 根主题.取题目());
     }
 
     @Test
